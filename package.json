@@ -1,0 +1,19 @@
+{
+  "name": "guru-ragavendra-portfolio",
+  "version": "1.0.0",
+  "description": "Premium developer portfolio website of Guru Ragavendra R.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"*.html, *.css, *.js\""
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "developer",
+    "spring-boot",
+    "java",
+    "react"
+  ],
+  "author": "Guru Ragavendra R",
+  "license": "ISC"
+}

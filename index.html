@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guru Ragavendra R - Computer Science & Engineering Graduate and Full-Stack Developer Portfolio. Explore projects, experience, skills, and certifications.">
+    <title>Guru Ragavendra R | Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>GURU<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link btn-contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle dark/light theme" class="theme-btn">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="menu-open"></i>
+                    <i data-lucide="x" class="menu-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+        <nav class="mobile-nav-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#contact" class="mobile-link mobile-btn-contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge hero-badge">
+                        <span class="pulse-dot"></span>
+                        Available for Full-time Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Guru Ragavendra R</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span id="typewriter" class="typewriter-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        A passionate Computer Science & Engineering student specializing in backend architecture (Spring Boot), full-stack development, and building high-performance, secure software solutions.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Ragavzz" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/guru-ragavendra-1ab287404/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://leetcode.com/u/Guru_1606/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="social-link">
+                            <i data-lucide="code-2"></i>
+                        </a>
+                        <a href="mailto:gururagavendra6971@gmail.com" aria-label="Email" class="social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="tel:6382638159" aria-label="Phone" class="social-link">
+                            <i data-lucide="phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <img src="assets/guru.jpg" alt="Guru Ragavendra R Avatar" class="avatar-img">
+                        <div class="floating-tech tech-react" title="React">
+                            <i data-lucide="atom"></i>
+                        </div>
+                        <div class="floating-tech tech-java" title="Java">
+                            <i data-lucide="coffee"></i>
+                        </div>
+                        <div class="floating-tech tech-cloud" title="AWS">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info card">
+                        <p class="about-bio-text">
+                            I am currently pursuing a <strong>Bachelor of Engineering in Computer Science and Engineering</strong> at <strong>Sri Krishna College Of Engineering And Technology</strong>. Driven by a strong passion for technology and software architecture, I love designing scalable backends and crafting responsive frontend experiences.
+                        </p>
+                        <p class="about-bio-text">
+                            My technical journey is centered around developing clean, reusable code, structuring robust databases, and leveraging cloud computing. I thrive in collaborative spaces and enjoy building solutions that directly address real-world community challenges.
+                        </p>
+                        
+                        <div class="education-card">
+                            <div class="edu-icon-box">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div class="edu-details">
+                                <span class="edu-duration">Expected Graduate</span>
+                                <h3 class="edu-degree">Bachelor of Engineering, Computer Science</h3>
+                                <h4 class="edu-institution">Sri Krishna College Of Engineering And Technology</h4>
+                                <p class="edu-location"><i data-lucide="map-pin"></i> Coimbatore, Tamilnadu</p>
+                                <div class="edu-gpa-badge">CGPA: 7.3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card card hover-glow">
+                            <div class="highlight-icon color-blue">
+                                <i data-lucide="server"></i>
+                            </div>
+                            <h3>Backend Architecture</h3>
+                            <p>Designing secure, modular microservices using Spring Boot, REST APIs, and authentication standards like JWT/RBAC.</p>
+                        </div>
+
+                        <div class="highlight-card card hover-glow">
+                            <div class="highlight-icon color-cyan">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <h3>Frontend & UI/UX</h3>
+                            <p>Creating beautiful, intuitive, and responsive interfaces with React.js, Tailwind CSS, and visual design tools.</p>
+                        </div>
+
+                        <div class="highlight-card card hover-glow">
+                            <div class="highlight-icon color-purple">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <h3>Data Management</h3>
+                            <p>Optimizing query structures, database indexing, and performance tuning in relational (MySQL) and non-relational databases (MongoDB).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Arsenal</span>
+                    <h2 class="section-title">Skills & Tools</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i data-lucide="code" class="category-icon text-blue"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="tools-badges">
+                            <span class="badge badge-tool">Java</span>
+                            <span class="badge badge-tool">C++</span>
+                            <span class="badge badge-tool">JavaScript</span>
+                            <span class="badge badge-tool">HTML</span>
+                            <span class="badge badge-tool">CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend / Architecture -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i data-lucide="server" class="category-icon text-purple"></i>
+                            <h3>Backend & Core CS</h3>
+                        </div>
+                        <div class="tools-badges">
+                            <span class="badge badge-tool">Spring Boot</span>
+                            <span class="badge badge-tool">REST APIs</span>
+                            <span class="badge badge-tool">JWT</span>
+                            <span class="badge badge-tool">RBAC</span>
+                            <span class="badge badge-tool">Microservices</span>
+                            <span class="badge badge-tool">Data Structures</span>
+                            <span class="badge badge-tool">Algorithms</span>
+                            <span class="badge badge-tool">OOP</span>
+                            <span class="badge badge-tool">Operating Systems</span>
+                            <span class="badge badge-tool">DBMS</span>
+                            <span class="badge badge-tool">Concurrency</span>
+                            <span class="badge badge-tool">Distributed Systems</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Cloud -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i data-lucide="database" class="category-icon text-cyan"></i>
+                            <h3>Databases & Cloud</h3>
+                        </div>
+                        <div class="tools-badges">
+                            <span class="badge badge-tool">MySQL</span>
+                            <span class="badge badge-tool">MongoDB</span>
+                            <span class="badge badge-tool">AWS (EC2, S3)</span>
+                            <span class="badge badge-tool">Google Cloud Platform</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Tools -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i data-lucide="wrench" class="category-icon text-orange"></i>
+                            <h3>Frameworks & Tools</h3>
+                        </div>
+                        <div class="tools-badges">
+                            <span class="badge badge-tool">React.js</span>
+                            <span class="badge badge-tool">Bootstrap</span>
+                            <span class="badge badge-tool">Photoshop</span>
+                            <span class="badge badge-tool">Figma</span>
+                            <span class="badge badge-tool">GitHub / Git</span>
+                            <span class="badge badge-tool">VS Code</span>
+                            <span class="badge badge-tool">Linux</span>
+                            <span class="badge badge-tool">AppSheet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Professional Journey</span>
+                    <h2 class="section-title">Internship & Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item -->
+                    <div class="timeline-item card">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i data-lucide="calendar"></i> June 2025</span>
+                            <span class="timeline-badge">Full Stack Development Java Intern</span>
+                        </div>
+                        <h3 class="timeline-title">Appin Technology</h3>
+                        <h4 class="timeline-subtitle">Coimbatore, India</h4>
+                        <ul class="timeline-details">
+                            <li>Gained hands-on experience in full-stack Java development and practical software training using <strong>Java, HTML, CSS, JavaScript, MySQL, JDBC, Servlet/JSP</strong>.</li>
+                            <li>Worked on application development concepts including frontend and backend integration.</li>
+                            <li>Enhanced problem-solving, communication, and professional skills through practical sessions..</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">What I've Built</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Projects Filter Tags -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="backend">Backend (Java)</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="ml">ML / Other</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Smart Attendance Security System -->
+                    <div class="project-card card" data-category="backend">
+                        <div class="project-media">
+                            <div class="project-overlay"></div>
+                            <div class="project-type"><i data-lucide="shield-check"></i> Java / Spring Boot</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Attendance Security System</h3>
+                            <p class="project-description">
+                                A highly secure, enterprise-grade attendance tracker deploying backend REST endpoints with JWT authorization and role-based permissions (RBAC).
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Designed and deployed 12+ secure REST APIs using JWT authentication and RBAC.</li>
+                                <li>Improved database performance by 30% through query tuning and indexing.</li>
+                                <li>Deployed backend on AWS EC2 and conducted load testing for concurrent user limits.</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">JWT / RBAC</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">AWS EC2</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ragavz" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                                <a href="#" class="project-link-btn disabled" title="Demo link unavailable">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CivicConnect -->
+                    <div class="project-card card" data-category="fullstack">
+                        <div class="project-media">
+                            <div class="project-overlay"></div>
+                            <div class="project-type"><i data-lucide="users"></i> Full Stack</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CivicConnect – Issue Management</h3>
+                            <p class="project-description">
+                                A community-driven full-stack platform enabling citizens to report municipal issues, trace complaint states in real-time, and view analytical dashboards.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Engineered robust APIs following the Controller-Service-Repository architecture pattern.</li>
+                                <li>Implemented custom visualizations and dashboards tracking active vs resolved issues.</li>
+                                <li>Enhanced platform responsiveness, lowering load speeds by over 20% on visual displays.</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ragavz" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                                <a href="#" class="project-link-btn disabled" title="Demo link unavailable">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plant Disease Detection -->
+                    <div class="project-card card" data-category="ml">
+                        <div class="project-media">
+                            <div class="project-overlay"></div>
+                            <div class="project-type"><i data-lucide="leaf"></i> Python / ML</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Plant Disease Detection Platform</h3>
+                            <p class="project-description">
+                                An intelligent crop monitoring tool designed to recognize plant leaf conditions and diagnose crop illnesses using modern machine learning classifiers.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Trained computer vision layers to identify leaf diseases under varying environments.</li>
+                                <li>Created custom interface showcasing diagnostic summaries and recommended soil treatment guidelines.</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span class="tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Bootstrap UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ragavz" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                                <a href="#" class="project-link-btn disabled" title="Demo link unavailable">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Library Management System -->
+                    <div class="project-card card" data-category="backend">
+                        <div class="project-media">
+                            <div class="project-overlay"></div>
+                            <div class="project-type"><i data-lucide="book-open"></i> Java / Core</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Library Management System</h3>
+                            <p class="project-description">
+                                A high-performance local console database engine tracking book rentals, inventory counts, member balances, and late fee estimations.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Programmed secure DBMS integrations using prepared queries to avoid SQL Injection.</li>
+                                <li>Designed fine-grained borrowing logic handling return periods and auto fee calculations.</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span class="tag">Java</span>
+                                <span class="tag">JDBC</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">OOP Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ragavz" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source Code">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                                <a href="#" class="project-link-btn disabled" title="Demo link unavailable">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section certifications-section" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Validation of Expertise</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Cisco Python Essentials 2 -->
+                    <div class="cert-card card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <h3 class="cert-title">Python Essentials 2</h3>
+                            <p class="cert-description">Advanced programming practices, object-oriented concepts, exception handling, generator functions, and directory structures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cisco Intro to Cybersecurity -->
+                    <div class="cert-card card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <h3 class="cert-title">Introduction to Cybersecurity</h3>
+                            <p class="cert-description">Fundamentals of system defense, network security threats, data integrity protections, and security compliance standards.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cisco Python Essentials 1 -->
+                    <div class="cert-card card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <h3 class="cert-title">Python Essentials 1</h3>
+                            <p class="cert-description">Basic data processing variables, logical branching, looping protocols, formatting, list array structures, and fundamental algorithms.</p>
+                        </div>
+                    </div>
+
+                    <!-- SNS Arduino Workshop -->
+                    <div class="cert-card card hover-glow">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">SNS Institute of Technology</span>
+                            <h3 class="cert-title">Arduino Microcontroller Workshop</h3>
+                            <p class="cert-description">Hands-on micro-controller layout designing, circuit board assembly, hardware components interactions, and C++ flashing scripts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details-box">
+                        <h3 class="contact-details-title">Let's build something epic</h3>
+                        <p class="contact-details-desc">
+                            Feel free to reach out for internship opportunities, full-time developer openings, or collaborative open-source projects.
+                        </p>
+                        
+                        <div class="info-items">
+                            <a href="mailto:gururagavendra6971@gmail.com" class="info-item-link card hover-glow">
+                                <div class="info-item-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="info-item-content">
+                                    <span class="info-label">Email Me</span>
+                                    <span class="info-value">gururagavendra6971@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+916382638159" class="info-item-link card hover-glow">
+                                <div class="info-item-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="info-item-content">
+                                    <span class="info-label">Call / WhatsApp</span>
+                                    <span class="info-value">+91 63826 38159</span>
+                                </div>
+                            </a>
+
+                            <div class="info-item-link card hover-glow">
+                                <div class="info-item-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="info-item-content">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Coimbatore, Tamilnadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-box card">
+                        <form id="portfolio-contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Opportunity / Collaboration">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" required rows="5" placeholder="Write your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            <div class="form-alert" id="form-alert-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Guru Ragavendra R. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Ragavzz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/guru-ragavendra-1ab287404/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://leetcode.com/u/Guru_1606/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i data-lucide="code-2"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Script Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
