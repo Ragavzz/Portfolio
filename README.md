@@ -5,7 +5,7 @@ This portfolio showcases my skills, projects, certifications, and contact inform
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Here]gururagavendrar-portfolio.netlify.app
+🔗 [View Portfolio Here]https://gururagavendrar-portfolio.netlify.app/
 
 
 ## 📌 Features
